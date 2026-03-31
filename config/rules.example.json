@@ -1,0 +1,11 @@
+{
+  "regras_gerais": [
+    "Sempre usar TRIM() em todos os campos na importação.",
+    "Se campo destino (se for campo de texto) for menor que origem, usar SUBSTRING e comentar -- VERIFICAR MANUALMENTE.",
+    "Se origem for TIMESTAMP e destino DATE, usar SUBSTRING(campo FROM 1 FOR 10).",
+    "Quebra de linha deve ser feita usando ASCII_CHAR(10) e ASCII_CHAR(13) dependendo do banco, verificar qual é o caso e usar a função correta."
+  ],
+  "regras_por_tabela": {  
+  },
+  "sinonimos": {}
+}
